@@ -1,0 +1,23 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: TopDownRPG3.Game
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    RootNamespace: TopDownRPG3
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir ../Assets
+    -   Path: !dir Effects
+ResourceFolders: []
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - 0a0bac91-de7d-44d3-b210-616fd080e422:NorthernChunk
+    - 8400922e-a7d9-41c2-a60d-501d253cb7c9:CentralChunk
+    - c4427f6b-8a44-4721-96d9-d605009af761:SouthernChunk
+    - f012e163-e3e3-49f1-8166-125ceb93b166:WesternChunk
+    - f94e010e-6cc5-41a4-b3c9-ad8979f375e7:EasternChunk

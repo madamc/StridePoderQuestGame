@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 3f44ee22-5095-4144-817b-3c5ebc9ab5f8
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    81d27642b567010d46a71f54d3f7f82c:
+        Source: !file ../../../../../../../../../coding/rust/bevy_3d_sprites/assets/art/monkobj/monk-2.png
+        Name: monk-2
+        TextureRegion: {X: 0, Y: 0, Width: 128, Height: 128}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

@@ -1,0 +1,78 @@
+!MaterialAsset
+Id: 9e433eff-4b5c-4522-a4c8-6495674eb752
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 3cf46cd0-dbd4-40b4-8122-747d98fafeb3:Textures/monk-1
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Filtering: Point
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialSpecularMapFeature
+        Enabled: false
+        SpecularMap: !ComputeBinaryColor
+            Operator: Saturate
+            LeftChild: null
+            RightChild: null
+        Intensity: !ComputeFloat
+            Value: 1.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Enabled: false
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Occlusion: !MaterialOcclusionMapFeature
+        Enabled: false
+        AmbientOcclusionMap: !ComputeFloat
+            Value: 1.0
+        DirectLightingFactor: !ComputeFloat
+            Value: 0.991
+        CavityMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        DiffuseCavity: !ComputeFloat
+            Value: 1.0
+        SpecularCavity: !ComputeFloat
+            Value: 1.0
+    Emissive: !MaterialEmissiveMapFeature
+        EmissiveMap: !ComputeShaderClassColor
+            MixinReference: TexturePointShader
+            Generics: {}
+            CompositionNodes:
+                3071a4650fa81185c9ec5fdcc623fc74~inputTexture: !ComputeTextureColor
+                    Texture: 3cf46cd0-dbd4-40b4-8122-747d98fafeb3:Textures/monk-1
+                    FallbackValue:
+                        Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                    Filtering: Point
+                    Scale: {X: 1.0, Y: 1.0}
+                    Offset: {X: 0.0, Y: 0.0}
+                    Swizzle: null
+        Intensity: !ComputeFloat
+            Value: 5.0
+        UseAlpha: true
+    SubsurfaceScattering: !MaterialSubsurfaceScatteringFeature
+        Enabled: false
+        ScatteringWidth: 0.1792
+        Translucency: 0.834
+        TranslucencyMap: !ComputeTextureScalar
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Enabled: false
+        ProfileFunction: !MaterialSubsurfaceScatteringScatteringProfileSkin {}
+        KernelFunction: !MaterialSubsurfaceScatteringScatteringKernelSkin
+            Falloff: {R: 1.0, G: 1.0, B: 1.0}
+            Strength: {R: 0.0, G: 0.0, B: 0.0}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+    CullMode: None
+Layers: {}

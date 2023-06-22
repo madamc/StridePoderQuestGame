@@ -1,0 +1,26 @@
+!PrefabAsset
+Id: 92d981f4-0ef8-4bbe-a2e2-2393047a2cd0
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 04e0503a-e38c-469a-9635-c95397ecf038
+    Parts:
+        -   Entity:
+                Id: 04e0503a-e38c-469a-9635-c95397ecf038
+                Name: monk-1
+                Components:
+                    e983c03cec5427264fbe7740b77327c3: !TransformComponent
+                        Id: 01280007-1316-4faa-9014-d694fc51d968
+                        Position: {X: -4.3551927, Y: 0.0, Z: -2.8096437}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    bffb53b30596166c6b328a75c29d7982: !SpriteComponent
+                        Id: b0fa2eca-93f5-4845-b5b7-23364f74b71d
+                        SpriteProvider: !SpriteFromTexture
+                            Texture: 3cf46cd0-dbd4-40b4-8122-747d98fafeb3:Textures/monk-1
+                            Center: {X: 0.0, Y: 0.0}
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        PremultipliedAlpha: false
+                        Sampler: PointClamp

@@ -1,0 +1,19 @@
+!MaterialAsset
+Id: b13f0b80-12ee-4b0c-bb47-8d00dc7d39e4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 3cf46cd0-dbd4-40b4-8122-747d98fafeb3:Textures/monk-1
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Filtering: Point
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+    CullMode: None
+Layers: {}

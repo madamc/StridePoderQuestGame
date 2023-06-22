@@ -1,0 +1,20 @@
+!Model
+Id: 87eb1a29-bedf-46f2-9d38-7bac52713614
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../../../../../coding/rust/bevy_3d_sprites/assets/art/monkobj/monk-1.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    729415c01738ca2e8b688ef3e14c33a8:
+        Name: DefaultMaterial
+        MaterialInstance:
+            Material: null
+    4d97b19cf61f2520cba5e9eedd624365:
+        Name: material_0
+        MaterialInstance:
+            Material: null
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    fc6a35f71799a8acfbed54d5850f5b39~../../../../../../../../../coding/rust/bevy_3d_sprites/assets/art/monkobj/monk-1.obj: e4a6dd8264f225a8c5f8afa09914a5d5
