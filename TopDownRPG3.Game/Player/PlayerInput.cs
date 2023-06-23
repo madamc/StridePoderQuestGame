@@ -8,6 +8,7 @@ using Stride.Input;
 using Stride.Physics;
 using Stride.Rendering;
 using TopDownRPG3.Core;
+using TopDownRPG3.Gameplay;
 
 namespace TopDownRPG3.Player
 {
@@ -34,11 +35,30 @@ namespace TopDownRPG3.Player
 
         private ClickResult lastClickResult;
 
+        private RoomClickHandler roomClickHandler;
+
+        public override void Start()
+        {
+            base.Start();
+            var entity = SceneSystem.SceneInstance.RootScene.Entities.First(e => e.Components.Get<RoomClickHandler>() != null);
+            if (entity != null)
+            {
+                roomClickHandler = entity.Get<RoomClickHandler>();
+
+            } else 
+            { 
+                Log.Error("Failed to retrieve the Room Click Handler");
+            }
+
+            //find a better place for this
+        }
+
         public override void Update()
         {
             if (Input.HasMouse)
             {
-                
+                string colliderName = "Yet Unset";
+
                 ClickResult clickResult;
                 Utils.ScreenPositionToWorldPositionRaycast(Input.MousePosition, Camera, this.GetSimulation(), out clickResult);
 
@@ -57,13 +77,18 @@ namespace TopDownRPG3.Player
                     MoveDestinationEventKey.Broadcast(lastClickResult);
                 }
 
-                if (isInteracting && Input.IsMouseButtonDown(MouseButton.Left))
+                if (isInteracting && Input.IsMouseButtonDown(MouseButton.Left) /* && NoActiveInventory */)
                 {
                     lastClickResult.WorldPosition = clickResult.WorldPosition;
                     MoveDestinationEventKey.Broadcast(lastClickResult);
-                    //Entity.EntityManager.
-                }
+                    var clickHandled = roomClickHandler.handleClick(PoderVerb.Use, clickResult.HitResult.Collider.Entity);
+                    if (!clickHandled)
+                    {
 
+                    }
+                    colliderName = clickResult.HitResult.Collider.Entity.Name;
+                }
+                DebugText.Print(colliderName, new Int2(400, 350));
                 // Object highlighting
                 if (isHighlit)
                 {

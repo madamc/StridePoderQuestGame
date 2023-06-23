@@ -178,7 +178,7 @@ namespace TopDownRPG3.Core
                 return cR;
             }
 
-            simulation.RaycastPenetrating(vectorNear.XYZ(), vectorFar.XYZ(), result);
+            simulation.RaycastPenetrating(vectorNear.XYZ(), vectorFar.XYZ(), result, hitTriggers: true);
             foreach (var hitResult in result)
             {
                 ClickType type = ClickType.Empty;
@@ -205,8 +205,13 @@ namespace TopDownRPG3.Core
                         }
                     }
 
-                    if(staticBody.CollisionGroup == CollisionFilterGroups.CustomFilter3)
-                    { }
+                    if(staticBody.CollisionGroup == CollisionFilterGroups.CharacterFilter)
+                    {
+                        type = ClickType.Interaction;
+
+                        var distance = (vectorNear.XYZ() - hitResult.Point).LengthSquared();
+                        clickResult = setClickResult(distance, hitResult, type);
+                    }
 
                     if (staticBody.CollisionGroup == CollisionFilterGroups.CustomFilter3)
                     { }

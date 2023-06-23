@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
+using TopDownRPG3.Core;
 
 namespace TopDownRPG3.Gameplay
 {
@@ -21,6 +22,12 @@ namespace TopDownRPG3.Gameplay
         public override void Update()
         {
             // Do stuff every new frame
+        }
+
+        public bool handleClick(PoderVerb verb, Entity clickedEntity)
+        {
+            var handled = false;
+            return handled;
         }
     }
 }

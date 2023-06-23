@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
+using TopDownRPG3.Core;
 
 namespace TopDownRPG3.Player
 {
@@ -25,6 +26,16 @@ namespace TopDownRPG3.Player
                 // Do stuff every new frame
                 await Script.NextFrame();
             }
+        }
+
+        public bool handleClick(PoderVerb verb, Entity clickedEntity)
+        {
+
+            return true;
+        }
+        public void onLookAt()
+        {
+
         }
     }
 }
