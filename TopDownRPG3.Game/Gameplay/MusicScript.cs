@@ -1,4 +1,4 @@
-// Copyright (c) .NET Foundation and Contributors (https://dotnetfoundation.org/ & https://stride3d.net) and Silicon Studio Corp. (https://www.siliconstudio.co.jp)
+﻿// Copyright (c) .NET Foundation and Contributors (https://dotnetfoundation.org/ & https://stride3d.net) and Silicon Studio Corp. (https://www.siliconstudio.co.jp)
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 using System.Threading.Tasks;
 using Stride.Audio;
@@ -23,7 +23,7 @@ namespace TopDownRPG3.Gameplay
             {
                 // start ambient music
                 music.IsLooping = true;
-                music.Play();
+                //music.Play();
             }
 
             while (Game.IsRunning)

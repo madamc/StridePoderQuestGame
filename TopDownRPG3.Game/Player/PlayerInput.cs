@@ -57,6 +57,13 @@ namespace TopDownRPG3.Player
                     MoveDestinationEventKey.Broadcast(lastClickResult);
                 }
 
+                if (isInteracting && Input.IsMouseButtonDown(MouseButton.Left))
+                {
+                    lastClickResult.WorldPosition = clickResult.WorldPosition;
+                    MoveDestinationEventKey.Broadcast(lastClickResult);
+                    //Entity.EntityManager.
+                }
+
                 // Object highlighting
                 if (isHighlit)
                 {

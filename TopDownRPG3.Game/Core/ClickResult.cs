@@ -31,10 +31,16 @@ namespace TopDownRPG3.Core
     {
         Clickable,
 
-        NonClickabler,
+        NonClickable,
     
     }
 
+    public enum PoderVerb
+    {
+        Use,
+        Look,
+        Inv,
+    }
     //public class PowerClickable
     //{
     //    public PowerClickable() { }
@@ -65,4 +71,5 @@ namespace TopDownRPG3.Core
         /// </summary>
         public HitResult    HitResult;
     }
+
 }

@@ -142,18 +142,9 @@ Hierarchy:
         - ref!! 74f63a62-a06e-4cd9-98c4-a09767ddea15
         - ref!! a1d46c68-0bdc-4f6e-9a86-26beca3c122c
         - ref!! 6f9e2afe-c2cb-4aa7-b1de-ce8f5d4f4ffd
-        - ref!! efa6ce6a-8c20-41e4-b42b-ae3359fefb9e
-        - ref!! 6d5985a2-2b3b-49ef-8fdf-e31aaf8d8b9e
-        - ref!! 5bb61fd1-5a4f-4fe3-9ec0-f6e55722d187
-        - ref!! 5abb848d-028a-4479-a565-dfd78d3e5829
-        - ref!! 3d637909-8d35-4158-bbc1-1e444633500f
-        - ref!! 42a3f18c-3cf8-4687-a87c-ac15d8c26b05
-        - ref!! e643de26-f888-4aa5-b5d3-e6dcce6642d9
-        - ref!! ae721985-2505-45fa-af6d-729b29b69e02
-        - ref!! 065a4aa8-69ec-47d8-b561-6a5847944f26
-        - ref!! 0ddffa94-dc32-47b1-9642-fc445f7db9c3
         - ref!! 946367f6-86dc-44c0-b54f-9361fbfedb0e
         - ref!! d5b91ea7-57bc-4494-8ab8-b43c1e672d93
+        - ref!! 752e1b82-f081-498b-9180-9ca31efe41bf
     Parts:
         -   Entity:
                 Id: 0012425a-8167-4220-b4f9-5a50ab7c9538
@@ -1712,6 +1703,7 @@ Hierarchy:
                         SoundEffect: 2e264d50-5b68-4893-8919-8ab21f2e63f8:Audio/coin_get
                     e3f8cc6b8cb0c44382b6dea99da7b6b1: !StaticColliderComponent
                         Id: 6bccf8e3-b08c-43c4-82b6-dea99da7b6b1
+                        Enabled*: true
                         CollisionGroup: SensorTrigger
                         CanCollideWith: CharacterFilter
                         CanSleep: false
@@ -3743,6 +3735,26 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             a2d6ca1adcf6ec41a4c7d29eb46ea480: ref!! a588bc88-eb74-4ee8-a259-e792a580fce7
+        -   Entity:
+                Id: 752e1b82-f081-498b-9180-9ca31efe41bf
+                Name: MainSceneEntity
+                Components:
+                    ea0b230a34bc8632a6e681d8a7c8ee8a: !TransformComponent
+                        Id: 8e84938c-96bf-4fe6-96f9-aa282de95eab
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            2bcdf74a71b246ef45c1dbf8234f7227: ref!! e7735087-4ebb-431d-a8a6-8783e5e1d2d2
+                            80a2cf7a75ebbdcd9abf4b84c6fd80c4: ref!! 61c1cd74-c7b0-490d-8def-8e8c7022f162
+                            808597e67be5ce41005e5d9c410a8d87: ref!! 804425be-4066-4073-8d19-d8ff0fa79c9e
+                            6b759831fe6a3e606763ef48fb2333d3: ref!! 2f912c86-610b-4e83-b4a4-5ffdcb8ebcb9
+                            3e9fa906e333a589fc62fcd86aa1633c: ref!! 6118429c-38c8-49c4-a330-4e99c5e4a0be
+                            c4f6e6792ea6c4c9947ebbf2da080f89: ref!! a0c5e8c8-4a1a-4c29-a764-25d333051cf2
+                            890e4e9a8ddb5d903f0e14d483ed2960: ref!! 540bdae4-42ed-41f2-a707-a4fc80919022
+                            3cb0dc6dafc9f602cb72848fdf8f1878: ref!! a33369bb-cdc2-4169-a4c8-cc9356f0977a
+                            c8248203dad47dd725cfd1bf1bd38ea0: ref!! 29781d67-a9b3-4f36-bcb7-5479cdcd79da
+                            f063c4d6674335da87aa6048549d397d: ref!! 54ec88a5-72ad-42cd-9e37-2a5c0eb1e7db
         -   Entity:
                 Id: 75c6062f-6a4d-4c61-8465-84152ffc6cd4
                 Name: LootBox
