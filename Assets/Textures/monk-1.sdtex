@@ -2,7 +2,7 @@
 Id: 3cf46cd0-dbd4-40b4-8122-747d98fafeb3
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../../../../../coding/rust/bevy_3d_sprites/assets/art/monkobj/monk-1.png
+Source: !file ../../Resources/Textures/monk-1.png
 IsCompressed: false
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

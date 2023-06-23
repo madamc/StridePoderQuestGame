@@ -7,7 +7,7 @@ ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
 Packing: {}
 Sprites:
     2203f045f7543d761bf60d899f29a52f:
-        Source: !file ../../../../../../gameassets/aseprite/mouse_cursor.png
+        Source: !file ../../Resources/Textures/mouse_cursor.png
         Name: mouse_cursor
         TextureRegion: {X: 0, Y: 0, Width: 32, Height: 32}
         Center: {X: 0.0, Y: 0.0}

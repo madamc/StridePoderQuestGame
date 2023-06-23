@@ -704,7 +704,7 @@ Hierarchy:
                         Materials: {}
                     9ff39e9a53a90d49bb7faec06f6d32ca: !StaticColliderComponent
                         Id: 9a9ef39f-a953-490d-bb7f-aec06f6d32ca
-                        CollisionGroup: CustomFilter2
+                        CollisionGroup*: CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1005,7 +1005,7 @@ Hierarchy:
                         Materials: {}
                     9ff39e9a53a90d49bb7faec06f6d32ca: !StaticColliderComponent
                         Id: 1db7f2e5-789f-40d9-b3fc-3dfc3953e5c1
-                        CollisionGroup: CustomFilter2
+                        CollisionGroup*: CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -1704,8 +1704,8 @@ Hierarchy:
                     e3f8cc6b8cb0c44382b6dea99da7b6b1: !StaticColliderComponent
                         Id: 6bccf8e3-b08c-43c4-82b6-dea99da7b6b1
                         Enabled*: true
-                        CollisionGroup: SensorTrigger
-                        CanCollideWith: CharacterFilter
+                        CollisionGroup*: CharacterFilter
+                        CanCollideWith*: DefaultFilter, CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -2252,8 +2252,8 @@ Hierarchy:
                         SoundEffect: 2e264d50-5b68-4893-8919-8ab21f2e63f8:Audio/coin_get
                     e3f8cc6b8cb0c44382b6dea99da7b6b1: !StaticColliderComponent
                         Id: e3baec28-f48b-46b8-af08-630a8b48c41c
-                        CollisionGroup: SensorTrigger
-                        CanCollideWith: CharacterFilter
+                        CollisionGroup*: CharacterFilter
+                        CanCollideWith*: DefaultFilter, CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -2291,7 +2291,7 @@ Hierarchy:
                         Materials: {}
                     9ff39e9a53a90d49bb7faec06f6d32ca: !StaticColliderComponent
                         Id: 6b9752eb-eb4c-470d-b057-63f6dcfb6324
-                        CollisionGroup: CustomFilter2
+                        CollisionGroup*: CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -2653,8 +2653,8 @@ Hierarchy:
                         SoundEffect: 2e264d50-5b68-4893-8919-8ab21f2e63f8:Audio/coin_get
                     e3f8cc6b8cb0c44382b6dea99da7b6b1: !StaticColliderComponent
                         Id: b4654ae0-a8c7-4c3e-929c-a2abb8f6d3db
-                        CollisionGroup: SensorTrigger
-                        CanCollideWith: CharacterFilter
+                        CollisionGroup*: CharacterFilter
+                        CanCollideWith*: DefaultFilter, CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -3755,6 +3755,8 @@ Hierarchy:
                             3cb0dc6dafc9f602cb72848fdf8f1878: ref!! a33369bb-cdc2-4169-a4c8-cc9356f0977a
                             c8248203dad47dd725cfd1bf1bd38ea0: ref!! 29781d67-a9b3-4f36-bcb7-5479cdcd79da
                             f063c4d6674335da87aa6048549d397d: ref!! 54ec88a5-72ad-42cd-9e37-2a5c0eb1e7db
+                    16ce981d7dcd8f4919435065b48d54b3: !TopDownRPG3.Gameplay.RoomClickHandler,TopDownRPG3.Game
+                        Id: b2d78579-7bc7-4c20-8897-eec17ea23afa
         -   Entity:
                 Id: 75c6062f-6a4d-4c61-8465-84152ffc6cd4
                 Name: LootBox
@@ -3772,7 +3774,7 @@ Hierarchy:
                         Materials: {}
                     9ff39e9a53a90d49bb7faec06f6d32ca: !StaticColliderComponent
                         Id: f5977f98-7c98-4eec-9b1c-1060fcc1f277
-                        CollisionGroup: CustomFilter2
+                        CollisionGroup*: CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -4968,8 +4970,8 @@ Hierarchy:
                         SoundEffect: 2e264d50-5b68-4893-8919-8ab21f2e63f8:Audio/coin_get
                     e3f8cc6b8cb0c44382b6dea99da7b6b1: !StaticColliderComponent
                         Id: 07e4873c-7c30-4b4f-8a0c-248cc547ab60
-                        CollisionGroup: SensorTrigger
-                        CanCollideWith: CharacterFilter
+                        CollisionGroup*: CharacterFilter
+                        CanCollideWith*: DefaultFilter, CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -5339,7 +5341,7 @@ Hierarchy:
                         Materials: {}
                     9ff39e9a53a90d49bb7faec06f6d32ca: !StaticColliderComponent
                         Id: 09529ff2-a741-4e98-aeb5-bb3fdd9a2844
-                        CollisionGroup: CustomFilter2
+                        CollisionGroup*: CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
@@ -6904,7 +6906,7 @@ Hierarchy:
                         Materials: {}
                     9ff39e9a53a90d49bb7faec06f6d32ca: !StaticColliderComponent
                         Id: a56c4fcd-3421-46cd-9ef1-3ccf85b8cb57
-                        CollisionGroup: CustomFilter2
+                        CollisionGroup*: CharacterFilter
                         CanSleep: false
                         Restitution: 0.0
                         Friction: 0.5
