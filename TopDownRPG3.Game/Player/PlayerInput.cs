@@ -37,9 +37,12 @@ namespace TopDownRPG3.Player
 
         private RoomClickHandler roomClickHandler;
 
+        private PoderQuestCommandService m_pdqcs;
+
         public override void Start()
         {
             base.Start();
+            m_pdqcs = Services.GetService<PoderQuestCommandService>();
             var entity = SceneSystem.SceneInstance.RootScene.Entities.First(e => e.Components.Get<RoomClickHandler>() != null);
             if (entity != null)
             {
@@ -55,6 +58,12 @@ namespace TopDownRPG3.Player
 
         public override void Update()
         {
+            if (m_pdqcs.isProcessingPoderQuestCommands()) 
+            {
+                DebugText.Print("Processing Command!", new Int2(400, 300));
+            }
+
+
             if (Input.HasMouse)
             {
                 string colliderName = "Yet Unset";
@@ -68,8 +77,9 @@ namespace TopDownRPG3.Player
 
                 var isInteracting = (clickResult.Type == ClickType.Interaction);
 
-
-                DebugText.Print("Boogaloo!" + clickResult.Type, new Int2(400, 400));
+                
+                DebugText.Print("Click result type: " + clickResult.Type, new Int2(50, 100));
+                DebugText.Print("Collider Name: " + colliderName, new Int2(50, 150));
                 // Character continuous moving
                 if (isMoving)
                 {
@@ -79,16 +89,17 @@ namespace TopDownRPG3.Player
 
                 if (isInteracting && Input.IsMouseButtonDown(MouseButton.Left) /* && NoActiveInventory */)
                 {
+                    clickResult.Verb = PoderVerb.Use;
                     lastClickResult.WorldPosition = clickResult.WorldPosition;
                     MoveDestinationEventKey.Broadcast(lastClickResult);
-                    var clickHandled = roomClickHandler.handleClick(PoderVerb.Use, clickResult.HitResult.Collider.Entity);
+                    var clickHandled = roomClickHandler.handleClick(clickResult);
                     if (!clickHandled)
                     {
 
                     }
                     colliderName = clickResult.HitResult.Collider.Entity.Name;
                 }
-                DebugText.Print(colliderName, new Int2(400, 350));
+                
                 // Object highlighting
                 if (isHighlit)
                 {

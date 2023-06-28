@@ -29,7 +29,7 @@ Materials:
     e3befa98ad23d3cfa84708dda84708dd:
         Name: lambert1
         MaterialInstance:
-            Material: b697787d-907f-4a3b-83b0-c74fa9e5029e:Materials/LambertMT
+            Material: b697787d-907f-4a3b-83b0-c74fa9e5029e:Audio/LambertMT
 Modifiers: {}
 ~SourceHashes:
     6b7e5b3e9c4180ffe5d731fa352283a4~../../Resources/Models/mannequinModel.fbx: 41531d1299044bd0f0b265374610fb1d

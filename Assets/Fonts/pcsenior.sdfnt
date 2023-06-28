@@ -1,0 +1,11 @@
+!SpriteFont
+Id: 49b108d5-e0d1-433a-b233-0aa34869db55
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !FileFontProvider
+    Source: !file ../../Resources/Fonts/pcsenior.ttf
+FontType: !RuntimeRasterizedSpriteFontType {}
+Spacing: 1.0
+LineSpacing: 7.0
+LineGapFactor: 5.0
+LineGapBaseLineFactor: 5.0

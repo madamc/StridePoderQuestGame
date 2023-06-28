@@ -158,6 +158,7 @@ namespace TopDownRPG3.Core
             var vectorFar = Vector3.Transform(sPos, invViewProj);
             vectorFar /= vectorFar.W;
 
+            clickResult = new ClickResult();
             clickResult.ClickedEntity = null;
             clickResult.WorldPosition = Vector3.Zero;
             clickResult.Type = ClickType.Empty;
@@ -169,7 +170,7 @@ namespace TopDownRPG3.Core
 
             ClickResult setClickResult(float distance, HitResult hR, ClickType cT)
             {
-                ClickResult cR;
+                ClickResult cR = new ClickResult();
                 minDistance = distance;
                 cR.Type = cT;
                 cR.HitResult = hR;

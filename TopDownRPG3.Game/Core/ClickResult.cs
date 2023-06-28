@@ -70,6 +70,8 @@ namespace TopDownRPG3.Core
         /// The HitResult received from the physics simulation
         /// </summary>
         public HitResult    HitResult;
+
+        public PoderVerb Verb;
     }
 
 }

@@ -1,0 +1,12 @@
+!SpriteFont
+Id: d3a0e3f2-dd48-4cff-97b3-2b7926931af9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !FileFontProvider
+    Source: !file ../../Resources/Fonts/pcsenior.ttf
+FontType: !OfflineRasterizedSpriteFontType
+    CharacterSet: null
+    CharacterRegions:
+        c4b6ce6b353b5ac0a14a04e244ef4830:
+            Start: ' '
+            End: "\x7F"

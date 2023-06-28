@@ -17,4 +17,4 @@ Materials:
 DeduplicateMaterials: false
 Modifiers: {}
 ~SourceHashes:
-    f58e9d2b8be48944abe298a60b759d1e~../../../../../rust/bevy_3d_sprites/assets/art/monkobj/monk-1.obj: e4a6dd8264f225a8c5f8afa09914a5d5
+    39870fbaa42836143b5665dc730698f5~../../Resources/Models/monk-1.obj: e4a6dd8264f225a8c5f8afa09914a5d5

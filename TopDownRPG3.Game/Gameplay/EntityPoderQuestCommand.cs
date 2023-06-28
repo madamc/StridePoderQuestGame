@@ -1,5 +1,5 @@
 ﻿using Stride.Engine;
-using TopDownRPG3.Core;
+using TopDownRPG3.PoderQuestCommands;
 
 namespace TopDownRPG3.Gameplay
 {

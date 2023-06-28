@@ -12,7 +12,6 @@ Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
         - ref!! 1ff1c9b8-7a14-4338-b9a1-e4bd7ebcf24e
-        - ref!! 9112d7e8-fdb1-477e-acd6-58dd61783773
         - ref!! 4f2bc840-2327-44a4-8030-294d3d1e44ab
         - ref!! 6c7778b3-439b-4d70-a265-0b61a0c38c99
         - ref!! 36396dfa-6aa4-4489-a7f5-e45f569bb082
@@ -293,26 +292,6 @@ Hierarchy:
                         Id: 0d6efc2a-7d05-4295-aa27-1438d51972c0
                         Url: f012e163-e3e3-49f1-8166-125ceb93b166:WesternChunk
                         Trigger: !RigidbodyComponent ref!! 06ed6375-b5de-40e6-88e8-16ba15e8f474
-        -   Folder: GlobalLights
-            Entity:
-                Id: 9112d7e8-fdb1-477e-acd6-58dd61783773
-                Name: Skybox
-                Components:
-                    6e987687711b70418c85dff5a9bbc2ec: !TransformComponent
-                        Id: 15cb07af-f17c-4f4d-97e7-40dde615753e
-                        Position: {X: 0.0, Y: 15.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    197b9ba9a8d24847a1b8d7261d35f329: !LightComponent
-                        Id: 20568876-3fe2-4602-b415-80760464236a
-                        Type: !LightSkybox
-                            Skybox: f97d5f3c-d4ce-4301-8940-a9844d23b64c:Skybox
-                        Intensity: 1.5
-                    aa0620582b7241f8b026bafcf0a07f05: !BackgroundComponent
-                        Id: d754d852-ea85-46ee-8b20-67625d64e7af
-                        Texture: eabedea4-506a-4232-9b47-5c5ca785e830:Skybox Texture
-                        Intensity: 3.0
         -   Entity:
                 Id: b068b67c-8307-4cd2-85cc-80f255865e54
                 Name: MannequinModel

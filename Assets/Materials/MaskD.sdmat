@@ -51,6 +51,7 @@ Attributes:
         SpecularCavity: !ComputeFloat
             Value: 1.0
     Emissive: !MaterialEmissiveMapFeature
+        Enabled: false
         EmissiveMap: !ComputeBinaryColor
             Operator: Multiply
             LeftChild: !ComputeTextureColor

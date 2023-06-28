@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: 648806de-bfd0-4aef-96ef-313ae78bb770
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: UI
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    f524b6d4e413d793dcd3319635ff071e:
+        Source: !file ../../Resources/Textures/bgr_panel.png
+        Name: bgr_panel
+        TextureRegion: {X: 0, Y: 0, Width: 64, Height: 64}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 13.0, Y: 13.0, Z: 13.0, W: 13.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

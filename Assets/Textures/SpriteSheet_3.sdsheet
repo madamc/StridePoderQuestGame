@@ -12,4 +12,4 @@ Sprites:
         TextureRegion: {X: 0, Y: 0, Width: 32, Height: 32}
         Center: {X: 0.0, Y: 0.0}
         Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
-        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+        BorderColor: {R: 255, G: 255, B: 255, A: 255}

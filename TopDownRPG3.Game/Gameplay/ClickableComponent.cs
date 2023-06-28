@@ -7,6 +7,7 @@ using Stride.Core.Mathematics;
 using Stride.Input;
 using Stride.Engine;
 using TopDownRPG3.Core;
+using TopDownRPG3.PoderQuestCommands;
 
 namespace TopDownRPG3.Gameplay
 {
@@ -19,6 +20,12 @@ namespace TopDownRPG3.Gameplay
 
         public override void Start()
         {
+            m_poderQuestCommandsOnUse = new List<IPoderQuestCommand>();
+            m_poderQuestCommandsOnLook = new List<IPoderQuestCommand>();
+            m_poderQuestCommandsOnInv = new List<IPoderQuestCommand>();
+            m_poderQuestCommandsOnUse.Add(new MoveToLoc());
+            m_poderQuestCommandsOnUse.Add(new DialogOneLiner());
+            setEntityForPoderQuestCommands();
             // Initialization of the script.
         }
 
@@ -59,19 +66,35 @@ namespace TopDownRPG3.Gameplay
             return handled;
         }
 
+        private void setEntityForPoderQuestCommands()
+        {
+            foreach (var command in m_poderQuestCommandsOnUse)
+            {
+                command.Entity = Entity;
+            }
+            foreach (var command in m_poderQuestCommandsOnLook)
+            {
+                command.Entity = Entity;
+            }
+            foreach (var command in m_poderQuestCommandsOnInv)
+            {
+                command.Entity = Entity;
+            }
+        }
+
         private void onInv()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void onLook()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void onUse()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

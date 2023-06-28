@@ -21,6 +21,7 @@ Attributes:
             RightChild: null
         Intensity: !ComputeFloat
             Value: 1.0
+        IsEnergyConservative: false
     SpecularModel: !MaterialSpecularMicrofacetModelFeature
         Enabled: false
         Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
@@ -56,7 +57,7 @@ Attributes:
                     Offset: {X: 0.0, Y: 0.0}
                     Swizzle: null
         Intensity: !ComputeFloat
-            Value: 5.0
+            Value: 1.0
         UseAlpha: true
     SubsurfaceScattering: !MaterialSubsurfaceScatteringFeature
         Enabled: false

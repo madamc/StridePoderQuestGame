@@ -7,7 +7,6 @@ Offset: {X: 0.0, Y: 0.0, Z: 0.0}
 Hierarchy:
     RootParts:
         - ref!! 27a91eaf-7622-42b4-89a2-3495a753b8d9
-        - ref!! e1d761e6-634d-4773-8d81-75dfc8e8b1c4
         - ref!! 5fc52dcf-f9f8-4c6d-b32d-3fc989aea8ad
         - ref!! 39790120-ebaf-43d5-8b06-e1aaa22d2f51
         - ref!! 605ce261-0f03-4563-b2d4-4ed4a7d4cd89
@@ -145,6 +144,7 @@ Hierarchy:
         - ref!! 946367f6-86dc-44c0-b54f-9361fbfedb0e
         - ref!! d5b91ea7-57bc-4494-8ab8-b43c1e672d93
         - ref!! 752e1b82-f081-498b-9180-9ca31efe41bf
+        - ref!! 554b5dfa-69d9-4318-87fc-628ea4654ce2
     Parts:
         -   Entity:
                 Id: 0012425a-8167-4220-b4f9-5a50ab7c9538
@@ -222,7 +222,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: a81e0666-1da7-41bb-8b73-6d2c5bb079f2
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.49363077, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -328,7 +328,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 583ee3cf-8a93-4391-91c5-487d94ce1142
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.48306048, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -801,6 +801,28 @@ Hierarchy:
                 BasePartId: b86036f4-0ce3-4794-9947-a61378390d41
                 InstanceId: 71bfb1dd-6a86-4de1-aedc-6789a6addea7
         -   Entity:
+                Id: 15db81d6-1da0-4a2e-8857-f356aeef04be
+                Name: UI
+                Components:
+                    26114042c606d9ba04e9993f16337d12: !TransformComponent
+                        Id: 16682246-86b0-4bfd-8b83-e2da9c96f892
+                        Position: {X: 0.0, Y: 0.0, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7960eb37d8041698759b2be2bf592834: !UIComponent
+                        Id: 3ddd81c1-2755-4831-8554-a74e85249984
+                        Page: null
+                        Sampler: PointClamp
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    2a203fa5f7d84a3497f85e4093a856de: !TopDownRPG3.UI.OnScreenText,TopDownRPG3.Game
+                        Id: 753da23e-c029-4555-821b-59313d82e6df
+                        SpriteFont_f: 49b108d5-e0d1-433a-b233-0aa34869db55:Fonts/pcsenior
+                        SpriteFont_b: null
+                        Panel: 648806de-bfd0-4aef-96ef-313ae78bb770:Textures/SpriteSheet_4
+                        Page: null
+        -   Entity:
                 Id: 19924b4b-18c6-46a2-9a6c-dd3b5a502198
                 Name: Box2x1x1
                 Components:
@@ -853,7 +875,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 50792007-258e-4000-9566-5b222f9e4228
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.44691384, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1051,7 +1073,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 24cc0760-d6fb-4a41-b581-a5e19d351ded
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.48306048, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1231,7 +1253,7 @@ Hierarchy:
                     5ab3300ae74fa14a9efcaa1f506407ce: !TransformComponent
                         Id: 0a30b35a-4fe7-4aa1-9efc-aa1f506407ce
                         Position: {X: 1.0, Y: 15.0, Z: 0.0}
-                        Rotation: {X: -0.5540323, Y: 0.21201216, Z: 0.1484525, W: 0.7912401}
+                        Rotation: {X: -0.21166521, Y: 0.13966498, Z: 0.21790133, W: 0.9424492}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     209f95c46d53de41a3dfff661934ae6c: !LightComponent
@@ -1240,15 +1262,11 @@ Hierarchy:
                             Color: !ColorRgbProvider
                                 Value: {R: 1.0, G: 1.0, B: 1.0}
                             Shadow:
-                                Enabled: true
-                                Filter: !LightShadowMapFilterTypePcf
-                                    FilterSize: Filter5x5
-                                Size: XLarge
+                                Size: Large
                                 DepthRange: {}
                                 PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
                                 ComputeTransmittance: false
                                 BiasParameters: {}
-                        Intensity: 5.0
         -   Folder: Platform/Walls
             Entity:
                 Id: 29d6292c-4882-4fc9-8967-cf941b25ab01
@@ -1546,7 +1564,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: ff99e140-934d-49a9-91bf-da8f1c9268c9
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.53296626, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1814,7 +1832,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: b107752a-17d6-436e-be56-172891799320
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5066768, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1873,7 +1891,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 5f3b6b5a-ed36-41a4-bbc1-cc35795aa240
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5028584, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -1996,6 +2014,25 @@ Hierarchy:
                 BasePartAsset: 73ab8fb3-2e5e-424b-97f2-5167ef628324:BlocksPrefabs/Box3x1x1
                 BasePartId: b86036f4-0ce3-4794-9947-a61378390d41
                 InstanceId: 19715c26-0714-488b-baf9-9a9b0edb1c98
+        -   Entity:
+                Id: 420ab9ea-c2b2-4657-91d9-f60783a4e66d
+                Name: VirtualMouse
+                Components:
+                    9c5e02794dc27ec3879a8e1f37bdacff: !TransformComponent
+                        Id: 99d7598c-497c-4fd1-8502-75802157376f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    593878d8788416d57f3e9631ff60598c: !UIComponent
+                        Id: a01dbc7d-a9e3-4525-9b08-2bf910db183d
+                        Page: null
+                        Sampler: PointClamp
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    eeb7081bc644c79b48b3be749b8a3c08: !TopDownRPG3.UI.VirtualCursor,TopDownRPG3.Game
+                        Id: fc359e90-def7-403b-92a8-a93f788eda97
+                        MouseImage: a30ab060-781b-46fe-a063-13671d31975a:Textures/SpriteSheet_3
         -   Folder: LootCrates
             Entity:
                 Id: 42a3f18c-3cf8-4687-a87c-ac15d8c26b05
@@ -2596,6 +2633,23 @@ Hierarchy:
                         IsShadowCaster: false
                         Materials:
                             8f46c33571e26d4bb19356e1ee060013~0: b0c931ca-5b9f-4ac9-a52b-9761fea23180:HighlightMaterial
+        -   Folder: GlobalLights
+            Entity:
+                Id: 554b5dfa-69d9-4318-87fc-628ea4654ce2
+                Name: Ambient light
+                Components:
+                    fceca645c00da564f599c8e69fa74c63: !TransformComponent
+                        Id: 0346803f-c759-4241-b0a4-3621c4999e5e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    e3411a203ea04adf5b3b082494a98262: !LightComponent
+                        Id: 75238e9d-f4d5-4f5e-abed-66e9a1665459
+                        Type: !LightAmbient
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                        Intensity: 0.2
         -   Entity:
                 Id: 5634fa79-783b-496f-917f-0f5d05f7baf0
                 Name: Box3x1x1
@@ -2934,7 +2988,7 @@ Hierarchy:
                         Children:
                             1245d3c0d097e44e8295e28dad432562: ref!! c0d34512-97d0-4ee4-8295-e28dad432562
                             39d4bdb202782a41869f2a6d53da4edf: ref!! b2bdd439-7802-412a-869f-2a6d53da4edf
-                            d8d55e0c9ca0a577110088f63e90c0d9: ref!! 7078a1b1-17a1-4c58-93ad-c3cc42e0b3a7
+                            9ebc7cc9c66d210dd82ff4690512a7c3: ref!! 99d7598c-497c-4fd1-8502-75802157376f
                     b978a0332590234b9f3a3537f50e75ae: !CharacterComponent
                         Id: 33a078b9-9025-4b23-9f3a-3537f50e75ae
                         CollisionGroup: CharacterFilter
@@ -3285,7 +3339,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: a235b8c3-b8f9-42d7-bc54-0c5578ec5862
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5028584, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3611,7 +3665,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: cd55c4d6-ea80-453d-b7da-36393a5970ad
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.44691384, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3670,7 +3724,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 6e0a9170-4f3c-45fe-9d0f-e1408ab88103
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.53296626, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3755,8 +3809,17 @@ Hierarchy:
                             3cb0dc6dafc9f602cb72848fdf8f1878: ref!! a33369bb-cdc2-4169-a4c8-cc9356f0977a
                             c8248203dad47dd725cfd1bf1bd38ea0: ref!! 29781d67-a9b3-4f36-bcb7-5479cdcd79da
                             f063c4d6674335da87aa6048549d397d: ref!! 54ec88a5-72ad-42cd-9e37-2a5c0eb1e7db
-                    16ce981d7dcd8f4919435065b48d54b3: !TopDownRPG3.Gameplay.RoomClickHandler,TopDownRPG3.Game
-                        Id: b2d78579-7bc7-4c20-8897-eec17ea23afa
+                            13708058444ef3ed862de32e99264a71: ref!! 16682246-86b0-4bfd-8b83-e2da9c96f892
+                    be5a17f27f1afa90631da2e87f047354: !TopDownRPG3.Core.ConfigureServices,TopDownRPG3.Game
+                        Id: 74a321b7-7447-4f65-881c-2d45d2ccb40f
+                    8e0d3ea74665b8008913159502669cdd: !UIComponent
+                        Id: d4261895-3c34-4df8-a09e-95f7ebef0e72
+                        Page: null
+                        Sampler: PointClamp
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}
+                    85a38b6f5aa06ce4dcc20e8a298240a4: !TopDownRPG3.Gameplay.RoomClickHandler,TopDownRPG3.Game
+                        Id: d4324000-bff6-4e4f-8939-a18a99b71fa5
         -   Entity:
                 Id: 75c6062f-6a4d-4c61-8465-84152ffc6cd4
                 Name: LootBox
@@ -3808,7 +3871,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: eea3c162-5d5b-41f1-9dea-9299b9d2e533
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.48306048, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3843,7 +3906,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: dbea3b17-98ee-4d6b-8a53-737a11092be6
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.49363077, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -3937,7 +4000,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: e2d3a0ca-06c3-46f4-9f74-5bd6a86dc001
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5028584, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -4477,7 +4540,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 573f509a-85e4-4d13-8f8e-1dfbe40739a0
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.49363077, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -4641,7 +4704,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 8d541e56-dd73-4e12-8d34-a8b72f0fd07f
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5233549, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -4700,6 +4763,28 @@ Hierarchy:
                 BasePartAsset: 82cbe48c-62c2-4472-99c4-dd3759259b7b:LootBox
                 BasePartId: 9e2837fb-0640-4774-9d3b-bbf81562d9aa
                 InstanceId: fe2f6840-d9cf-4283-adcb-656f1f6b203f
+        -   Entity:
+                Id: 98992fcb-7d8a-43d4-afad-047a625ec32b
+                Name: Directional light
+                Components:
+                    88671926624e186145aacd5e982154c5: !TransformComponent
+                        Id: 1dfc1ba3-20a7-4d64-a062-574f2fa38893
+                        Position: {X: 0.0, Y: -1.0, Z: 115.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    bcd044587cf1498bfb29fa32dd12b176: !LightComponent
+                        Id: 5a06ff6c-0f4b-491d-8f42-460778d130cb
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 1000.0
         -   Entity:
                 Id: 9af7de17-613a-48b1-a42d-1aabb4dd32c2
                 Name: GridBase10x10
@@ -5189,21 +5274,23 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             a116d811cab5bf4da5211050e1d34e10: ref!! 11d816a1-b5ca-4dbf-a521-1050e1d34e10
+                            c2dc6156cfdc4bc870eb1d9075588d06: ref!! 1dfc1ba3-20a7-4d64-a062-574f2fa38893
         -   Entity:
                 Id: a7b68422-0fb4-45c9-b853-8e17a08a3953
                 Name: Camera
                 Components:
                     a116d811cab5bf4da5211050e1d34e10: !TransformComponent
                         Id: 11d816a1-b5ca-4dbf-a521-1050e1d34e10
-                        Position: {X: 0.0, Y: 0.0, Z: 12.0}
+                        Position: {X: 0.0, Y: -1.0, Z: 110.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
+                        Children:
+                            9c12137d6b2801051271f0ce2211fc43: ref!! 7078a1b1-17a1-4c58-93ad-c3cc42e0b3a7
                     1fb7d1656248fc4eb7c13c9d933979c7: !CameraComponent
                         Id: 65d1b71f-4862-4efc-b7c1-3c9d933979c7
                         Name: null
                         Projection: Perspective
-                        VerticalFieldOfView: 25.0
+                        VerticalFieldOfView: 3.0
                         OrthographicSize: 6.0
                         Slot: c15adccd-88f4-4cd9-a45a-55ce9f8e89e5
         -   Folder: Platform/Walls
@@ -5224,7 +5311,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 86e2d38a-9be4-4d84-9990-d8788b9309e6
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5066768, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -5963,7 +6050,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: c22459ce-f09e-4825-83ba-2c1c5aa2f12b
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.44691384, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -6125,9 +6212,6 @@ Hierarchy:
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    397f787eab8d74d18a8d0c50758311ef: !TopDownRPG3.Player.MouseInputScript,TopDownRPG3.Game
-                        Id: 1c874a27-a0ba-43c2-8b8e-caf49cca124b
-                        MouseImage: a30ab060-781b-46fe-a063-13671d31975a:Textures/SpriteSheet_3
                     77b7f9f27168d02249ae538d54e4dfb5: !UIComponent
                         Id: 10755aec-78c3-4cc6-aa48-9e858b19bc37
                         Page: null
@@ -6234,7 +6318,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: cc1d2c2d-ceef-4efc-9bec-cdcf40478820
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.48306048, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -6304,7 +6388,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 2ef505fe-926b-4d77-b6bf-fd19cd96f7f5
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.53296626, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -6531,6 +6615,8 @@ Hierarchy:
                                 Radius: 0.3
                                 LocalOffset: {X: 0.0, Y: 0.845, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                    0ba4c360f0c617661e77ba71e592f5c4: !TopDownRPG3.Gameplay.ClickableComponent,TopDownRPG3.Game
+                        Id: 53003bb8-c240-4a92-95a6-665f8f55c14c
         -   Entity:
                 Id: d63f8876-64ae-4d08-ba07-939e3512d0e6
                 Name: Box3x1x1
@@ -6775,26 +6861,6 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             93de224b90e2294a896f8bb03d0c6705: ref!! befcad48-f9ad-42e9-b5cd-8d9f45504a30
-        -   Folder: GlobalLights
-            Entity:
-                Id: e1d761e6-634d-4773-8d81-75dfc8e8b1c4
-                Name: Skybox
-                Components:
-                    6e987687711b70418c85dff5a9bbc2ec: !TransformComponent
-                        Id: 8776986e-1b71-4170-8c85-dff5a9bbc2ec
-                        Position: {X: 0.0, Y: 15.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    197b9ba9a8d24847a1b8d7261d35f329: !LightComponent
-                        Id: a99b7b19-d2a8-4748-a1b8-d7261d35f329
-                        Type: !LightSkybox
-                            Skybox: f97d5f3c-d4ce-4301-8940-a9844d23b64c:Skybox
-                        Intensity: 1.5
-                    aa0620582b7241f8b026bafcf0a07f05: !BackgroundComponent
-                        Id: 2a03610c-5655-4a9f-b84b-f669c4f63b0a
-                        Texture: eabedea4-506a-4232-9b47-5c5ca785e830:Skybox Texture
-                        Intensity: 3.0
         -   Folder: Platform/Walls
             Entity:
                 Id: e2049576-c2ae-4965-9774-bf6c7267d3c1
@@ -7217,7 +7283,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 825a10e1-c749-4387-9a31-56d441bdcb8a
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5028584, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -7323,7 +7389,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: d8fb016a-2dd8-4994-9506-24cde9b9a821
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5066768, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
@@ -7382,7 +7448,7 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: 4c781783-e1f9-43b9-864f-908a7833f4de
-                        Position: {X: 1.5000001, Y: 0.5, Z: 0.5}
+                        Position*: {X: 1.5000001, Y: -0.5233549, Z: 0.5}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
